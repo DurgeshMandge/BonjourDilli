@@ -4,8 +4,14 @@
     width: 70px;
     /* object-fit: cover; */
 }
+.navbar-nav .nav-link {
+    color: white; /* Change to your desired color */
+  }
 body{
+    color: aliceblue;
     background-attachment: fixed;
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-    url("assets/delhiLogo.png");
+    url("assets/temp.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
