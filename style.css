@@ -7,11 +7,35 @@
 .navbar-nav .nav-link {
     color: white; /* Change to your desired color */
   }
-body{
+/* body{
     color: aliceblue;
     background-attachment: fixed;
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
     url("assets/temp.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 0% center;
+} */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/metro.jpeg'); /* Replace with your image URL */
+    background-size: auto 100%; /* Auto width, 100% height */
+    background-repeat: repeat-x; /* Repeat horizontally only */
+    animation: scrollBackground 10s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scrollBackground {
+    0% {
+        background-position: 0 0; /* Start position at left */
+    }
+    100% {
+        background-position: 100% 0; /* End position at right */
+    }
 }
